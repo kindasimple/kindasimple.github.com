@@ -1,0 +1,26 @@
+## Dependencies
+#markdown:         rdiscount
+#pygments:         true
+
+## Permalinks
+#permalink:        pretty
+
+## Server
+#destination:      ./_gh_pages
+exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "README.md"]
+#port:             9001
+
+## Custom vars
+base_url:           http://kindasimplesolutions.com/
+github:             https://github.com/kindasimple
+stack_overflow:     http://stackoverflow.com/users/491506/kindasimple
+twitter:            https://twitter.com/kindasimple
+coderbits:          https://coderbits.com/kindasimple
+blog:               http://localhost:4000/blog
+url:                http://localhost:4000
+pgh_techfest-code:     https://github.com/kindasimple/PGHTechFest
+pgh_techfest-win8:          http://apps.microsoft.com/windows/en-us/app/pghtechfest/630784e7-6037-494c-94d8-6eea9f468125
+pgh_techfest-wp:          /PGHTechFest
+recollection-win8:          http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
+recollection-wp:            /MajorSystem
+recollection-web:           http://mnemonal.com

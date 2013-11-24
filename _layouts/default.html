@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include header.html %}
+  </head>
+  <body>
+
+      <!-- Docs master nav -->
+    {% include nav-default.html %}
+    
+    <main class="bs-masthead" id="content" role="main">
+        <div class="wrapper">
+          <section>
+            <div id="title">
+              <h1>{{ page.title }}</h1>
+              <p>{{ page.tagline }}</p>
+              <hr>
+              <span class="credits left"><a href="{{ site.base_url }}"><< Back Home</a></span>
+            </div>
+        
+            <!-- Page content of course! -->
+            {{ content }}
+           </section>
+
+        </div>
+    </main>
+    
+    <!-- JS and analytics only. -->
+    {% include footer.html %}
+
+  </body>
+</html>
