@@ -2,16 +2,21 @@
 #markdown:         rdiscount
 #pygments:         true
 
+
 ## Permalinks
-#permalink:        pretty
+permalink:     '/blog/:year/:title/'
+relative_permalinks: false
 
 ## Server
 #destination:      ./_gh_pages
 exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "README.md"]
+include:            ['_pages']
 #port:             9001
 
 ## Custom vars
-base_url:           http://kindasimplesolutions.com/
+name: KindaSimple Solutions
+description: The projects 
+base_url:           http://kindasimplesolutions.com
 github:             https://github.com/kindasimple
 stack_overflow:     http://stackoverflow.com/users/491506/kindasimple
 twitter:            https://twitter.com/kindasimple
@@ -24,3 +29,12 @@ pgh_techfest-wp:          /PGHTechFest
 recollection-win8:          http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
 recollection-wp:            /MajorSystem
 recollection-web:           http://mnemonal.com
+
+authors:
+  evan:
+    display_name: Evan White
+    gravatar: ae943e5c7ca9f2846df1064e5b569d2d
+    email: kindasimple@gmail.com
+    web: http://www.kindasimple.com/
+    twitter: kindasimple
+    github: kindasimple

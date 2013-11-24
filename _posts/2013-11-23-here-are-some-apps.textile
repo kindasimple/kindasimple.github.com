@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: post
 title: Here Are Some Apps
+author: evan
 categories: [dev]
 tagline: 'Some projects I have been working on'
 ---
-
-<h3>Here are some apps.</h3>
 
 <p>I have a good amount of WinRT experience. So, I decided to make some Windows 8 &amp; Windows Phone applications to have a presence in the app store.</p>
 
