@@ -3,7 +3,9 @@
     <span>
         <img style="float:left; margin-right:12px;" src="https://s.gravatar.com/avatar/{{ site.authors.evan.gravatar }}?s=80">
     </span>
-    <span class="author">Written by {{ author.display_name }}
+    <span class="author">
+        Written by {{ author.display_name }}
+        <div>{{ page.date | date: "%-d %B %Y" }}</div>
         <div>
             <span><a href="{{ site.twitter }}">Twitter</a> | </span>
             <span><a href="{{ site.github }}">Github</a> | </span>
