@@ -6,25 +6,25 @@
   </head>
   <body>
 
-      <!-- Docs master nav -->
-    {% include nav-pages.html %}
-    
-    <main class="bs-masthead" id="content" role="main">
-        <div class="wrapper">
-          <section>
-            <div id="title">
-              <h1>{{ page.title }}</h1>
-              <p>{{ page.tagline }}</p>
-              <hr>
-              <span class="credits left"><a href="{{ site.base_url }}"><< Back Home</a></span>
-            </div>
-        
-            <!-- Page content of course! -->
-            {{ content }}
-           </section>
+  <!-- content container //-->
+  <div class="pure-g-r" id="layout">
 
-        </div>
-    </main>
+    {% include blog-sidebar.html %}
+
+    <div class="pure-u-1">
+
+      <!-- content here //-->
+      <div class="content">
+
+        <section>
+          <div id="title">
+            <h1>{{ page.title }}</h1>
+            <h1 class="content-subhead">{{ page.tagline }}</h1>
+          </div>
+      
+          <!-- Page content of course! -->
+          {{ content }}
+         </section>
     
     <!-- JS and analytics only. -->
     {% include footer.html %}

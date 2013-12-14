@@ -9,26 +9,39 @@ relative_permalinks: false
 
 ## Server
 #destination:      ./_gh_pages
-exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "README.md"]
+exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "README.md", "serve.cmd"]
 include:            ['_pages']
 #port:             9001
+
+
 
 ## Custom vars
 name: KindaSimple Solutions
 description: The projects 
-base_url:           http://kindasimplesolutions.com
-github:             https://github.com/kindasimple
-stack_overflow:     http://stackoverflow.com/users/491506/kindasimple
-twitter:            https://twitter.com/kindasimple
-coderbits:          https://coderbits.com/kindasimple
-blog:               http://localhost:4000/blog
-url:                http://localhost:4000
-pgh_techfest-code:     https://github.com/kindasimple/PGHTechFest
-pgh_techfest-win8:          http://apps.microsoft.com/windows/en-us/app/pghtechfest/630784e7-6037-494c-94d8-6eea9f468125
-pgh_techfest-wp:          /PGHTechFest
-recollection-win8:          http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
-recollection-wp:            /MajorSystem
-recollection-web:           http://mnemonal.com
+
+## Navigation
+nav-about:	/about
+nav-recollection-wp:            /MajorSystem
+nav-pgh_techfest-wp:          /PGHTechFest
+nav-archives:	/archive
+nav-projects:	/projects
+nav-rss:		/blog/feed.xml
+nav-blog:		/blog
+
+link-base_url:           http://kindasimplesolutions.com
+link-github:             https://github.com/kindasimple
+link-stack_overflow:     http://stackoverflow.com/users/491506/kindasimple
+link-stack_overflow-avatar:     http://stackoverflow.com/users/flair/491506.png
+link-twitter:            https://twitter.com/kindasimple
+link-coderbits:          https://coderbits.com/kindasimple
+link-blog:               http://kindasimplesolutions.com/blog
+link-url:                http://kindasimplesolutions.com
+link-pgh_techfest-code:     https://github.com/kindasimple/PGHTechFest
+link-pgh_techfest-win8:          http://apps.microsoft.com/windows/en-us/app/pghtechfest/630784e7-6037-494c-94d8-6eea9f468125
+link-recollection-win8:          http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
+link-recollection-web:           http://mnemonal.com
+email-link:					mailto:kindasimple@gmail.com
+email-text:					kindasimple@gmail.com
 
 authors:
   evan:

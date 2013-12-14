@@ -1,8 +1,11 @@
 ---
-layout: post
+layout: blog
 title: Apigee on PhoneGap
 author: evan
 categories: [dev]
+tags:
+- Apigee
+- PhoneGap
 tagline: 'Writing Cross Platform HTML5 Apps using PhoneGap and UserGrid'
 ---
 I like Orlando--most of all because its residents enjoy summertime temperatures while the rest of the country is in a deep freeze.

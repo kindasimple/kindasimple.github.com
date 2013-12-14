@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        {% include header.html %}
+
+    </head>
+    <body>
+
+        <div class="pure-g-r" id="layout">
+
+    {% include blog-sidebar.html %}
+
+    <div class="pure-u-1">
+        <div class="content">
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- <h1 class="content-subhead">Recent Posts</h1> //-->
+                <a href="{{ site.link-base_url }}"><< Back Home</a>
+
+
+            <!-- A single blog post -->
+            {% assign author = site.authors[page.author] %}
+            <section class="post">
+                <header class="post-header">
+                    <img class="post-avatar" alt="{{ author.display_name }} avatar" height="48" width="48" src="https://s.gravatar.com/avatar/{{ site.authors.evan.gravatar }}?s=80"">
+
+                    <h2 class="post-title">{{ page.title }}</h2>
+
+                    <p class="post-meta">Posted {{ page.date | date: "%-d %B %Y" }} 
+                        by <a href="#" class="post-author">{{ author.display_name }}</a> under 
+
+                          {% for cat in page.categories %}
+                            <a class="post-category post-category-{{cat}}" href="#">{{ cat }}</a>
+                          {% endfor %}
+
+                          tags: 
+
+                          {% for tag in page.tags %}
+                            <span>{{ tag }}</span>
+                          {% endfor %}
+                    </p>
+                </header>
+
+                <div class="post-description">
+                    {{ content }}
+                </div>
+            </section>
+        </div>
+
+             <div id="page-navigation"> 
+                <div class="clear">&nbsp;</div> 
+                <div class="left"> 
+                {% if page.previous.url %} 
+                        <a href="{{page.previous.url}}" title="Previous Post: 
+        {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+                {% endif %} 
+                </div> 
+
+                <div class="right"> 
+                {% if page.next.url %} 
+                        <a href="{{page.next.url}}" title="next Post: 
+        {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+                {% endif %} 
+                </div> 
+                <div class="clear">&nbsp;</div> 
+              </div> 
+ 
+
+    <!-- JS and analytics only. -->
+    {% include blog-footer.html %}
+
+  </body>
+</html>

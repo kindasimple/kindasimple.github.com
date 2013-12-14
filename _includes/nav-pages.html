@@ -3,8 +3,8 @@
       <li class="fork"><a href="{{ site.base_url }}">Home</a></li>
       
       {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
-        <li class="downloads"><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li>
-        <li class="downloads"><a {% if location == 'projects' %}class="active" {% endif %}href="/projects/">Projects</a></li>
-        <li class="downloads"><a {% if location == 'blog' %}class="active" {% endif %}href="/blog/">Blog</a></li>
+        <li class="downloads"><a {% if location == 'about' %}class="active" {% endif %}href="{{ site.nav-about }}">About</a></li>
+        <li class="downloads"><a {% if location == 'projects' %}class="active" {% endif %}href="{{ site.nav-projects }}">Projects</a></li>
+        <li class="downloads"><a {% if location == 'blog' %}class="active" {% endif %}href="{{ site.nav-blog }}">Blog</a></li>
     </nav>
   </div><!-- end header -->

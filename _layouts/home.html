@@ -6,11 +6,21 @@
   </head>
   <body>
 
-      <!-- Docs master nav -->
-    {% include nav-pages.html %}
-    
-    <!-- Page content of course! -->
-    {{ content }}
+  <!-- content container //-->
+  <div class="pure-g-r" id="layout">
+
+    {% include blog-sidebar.html %}
+
+    <div class="pure-u-1">
+
+      <!-- content here //-->
+      <div class="content">
+
+        <section>
+
+          <!-- Page content of course! -->
+          {{ content }}
+        </section>
     
     <!-- JS and analytics only. -->
     {% include footer.html %}

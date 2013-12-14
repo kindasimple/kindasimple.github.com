@@ -1,16 +1,18 @@
 ---
 permalink: /blog/
-layout:    default
+layout:    post
 title:     KindaSimple Blog
 ---
 
-<ul>
+<div>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+	  <span>
+    	<p class="post-meta" style="float:right;">{{ post.date | date: "%-d %B %Y" }}</p>
+    	<a href="{{ post.url }}"><h1 class="content-subhead">{{ post.title }}</h1></a>
+      </span>
       <p>{{ post.excerpt }}</p>
+      <p>
       <a href="{{ post.url }}">Continue Reading >></a>
-    </li>
-    
+      </p>
   {% endfor %}
-</ul>
+</div>

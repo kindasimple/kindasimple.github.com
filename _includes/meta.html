@@ -7,12 +7,12 @@
         Written by {{ author.display_name }}
         <div>{{ page.date | date: "%-d %B %Y" }}</div>
         <div>
-            <span><a href="{{ site.twitter }}">Twitter</a> | </span>
-            <span><a href="{{ site.github }}">Github</a> | </span>
-            <span><a href="{{ site.stack_overflow }}">Stack Overflow</a></span>
+            <span><a href="{{ site.link-twitter }}">Twitter</a> | </span>
+            <span><a href="{{ site.link-github }}">Github</a> | </span>
+            <span><a href="{{ site.link-stack_overflow }}">Stack Overflow</a></span>
 
         </div>
-        <div><a href="mailto:kindasimple@gmail.com">kindasimple@gmail.com</a></div>
+        <div><a href="{{ site.email-link }}">{{ site.email-text }}</a></div>
     </span>
 </div>
 <div style="clear:both"/><br/>
