@@ -1,0 +1,15 @@
+---
+layout: blog
+title: Mac Setup
+author: evan
+categories: [dev]
+tagline: 'Setting up my new MacBook Air'
+---
+
+"Spectacle":http://spectacleapp.com/ Resizing windows
+"Xcode":https://developer.apple.com/xcode/ Editor
+"Sublime":http://www.sublimetext.com/: Editor
+vim: Editor
+"Mou":http://mouapp.com/ Markdown Editor
+"Flux":http://justgetflux.com/
+"Microsoft Remote Desktop":https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12
