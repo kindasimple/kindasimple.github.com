@@ -141,7 +141,7 @@ There are some options on the _watch_ task to specify the timing and interruptio
 
 <pre class="prettyprint">
 <code>
-<script src="http://localhost:1337/"></script>
+<script src="http://localhost:1337/livereload.js"></script>
 </code>
 </pre> 
 
