@@ -12,4 +12,14 @@ tagline: 'Setting up my new MacBook Air'
 vim: Editor
 "Mou":http://mouapp.com/ Markdown Editor
 "Flux":http://justgetflux.com/
-"Microsoft Remote Desktop":https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12
+"Microsoft Remote Desktop":https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=1
+
+h2. Shortcut Keys
+
+Copy+pasting: 
+
+copy with command+c
+paste with command+v
+cut and paste with command+option+v
+
+http://osxdaily.com/2011/07/29/cut-and-paste-mac-os-x-lion/2

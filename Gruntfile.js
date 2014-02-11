@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 				command: 'jekyll build'
 			},
 			srv_dev: {
-				command: 'jekyll serve --config _config.yml,_config-dev.yml'
+				command: 'jekyll serve --drafts --config _config.yml,_config-dev.yml'
 			}
 		},	
 		watch: {
