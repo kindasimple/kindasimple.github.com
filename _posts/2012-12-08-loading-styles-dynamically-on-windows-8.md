@@ -16,8 +16,6 @@ tags:
 Windows 8 is very ambitious in its breadth of supported form factors.  Huge screens down through small tablets, it is quite variety of display surfaces supported with different dimensions, aspect ratios, and resolutions
 
 ![Common Sizes for Windows 8](http://i1.wp.com/blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-01-29-43-metablogapi/2526.Scaling_2D002D002D00_Common_2D00_Sizes_5F00_thumb_5F00_61A51101.jpg?resize=625%2C352 "Common Sizes for Windows 8")
-Common sizes for Windows 8
-
 
 While designing flexible layouts is a must; there are limits. Add to that the difference in use cases for a person interacting with a large monitor at their desk on the one hand, or viewing a television across the room on the other.  The screens would have similar dimensions and aspect ratios, but the former demands a lot of data be available up close while the latter prefers less data well presented.  DUI or Distance UI is a term for this concept, and dynamic themes may provide some solutions.
 
