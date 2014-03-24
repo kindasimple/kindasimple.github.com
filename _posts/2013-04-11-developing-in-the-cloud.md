@@ -23,9 +23,7 @@ I want to move my development environment to the cloud.  My current setup is po
 
 With Citrix I could create my own local cloud but I find Amazon AWS & Azure much more promising.  There are plenty of ways to get your web development into the cloud through online services.  [Cloud9ide][1] provides a web development environment.  [Cloudshare][2] gives access to a cloud development platform for Beta Microsoft products.
 
-To speed up setup we can use [Bitnami][3] for downloading open source stacks that can be hosted in the AWC cloud or on your local PC.  For a fee, Bitnami will host your environment for you, but for gree you can test out the packages for an hour.  I explored a test instance of [TestLink][4] for creating test plans, which led me to explore some comparable solutions such as [Redmine for Project Management][5] and<span style="line-height: 1.714285714; font-size: 1rem;"> </span><a style="line-height: 1.714285714; font-size: 1rem;" href="http://sourceforge.net/projects/rth/">RTH &#8211; Requirements and Testing Hub</a>
-
-&nbsp;
+To speed up setup we can use [Bitnami][3] for downloading open source stacks that can be hosted in the AWC cloud or on your local PC.  For a fee, Bitnami will host your environment for you, but for gree you can test out the packages for an hour.  I explored a test instance of [TestLink][4] for creating test plans, which led me to explore some comparable solutions such as [Redmine for Project Management][5] and [RTH &#8211; Requirements and Testing Hub](http://sourceforge.net/projects/rth/).
 
 [Amazon&#8217;s AWS][6] offers a 1 year trial for a micro-instance that has enough computing power, storage, and bandwidth to run a website or web service, making it a great option for testing.  There are options for both Linux and Windows.
 
