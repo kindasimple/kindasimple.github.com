@@ -1,0 +1,60 @@
+<p>Nir Sofer has written a fun utility that I have been using to make my scripts talk.  Its called <a href="The">nircmd.exe</a></p>
+
+<blockquote>
+<p>NirCmd is a small command-line utility that allows you to do some useful tasks without displaying any user interface. By running NirCmd with simple command-line option, you can write and delete values and keys in the Registry, write values into INI file, dial to your internet account or connect to a VPN network, restart windows or shut down the computer, create shortcut to a file, change the created/modified date of a file, change your display settings, turn off your monitor, open the door of your CD-ROM drive, and more…</p>
+
+<p>http://www.nirsoft.net/utils/nircmd.html</p>
+</blockquote>
+<!--more-->
+<p>Text-To-Speach is available at least as far back as Windows XP. I’m not sure how to call it directly, but using nircmd it is as simple as</p>
+<pre class='wp-code-highlight prettyprint'>nircmd speak text "Hello" 2 60</pre>
+<p>The parameters are the speed and the volume of the narrator. To add narration to my scripts I call :SPEAK instead of echo to write to the console.</p>
+<pre class='wp-code-highlight prettyprint'>REM =====================================================================
+REM = SPEAK - vocalize command
+REM =====================================================================
+:SPEAK
+where nircmd.exe /Q
+if %errorlevel% neq 0 ( 
+echo %~1 
+) else (
+nircmd speak text "%~1" 2 60
+)
+EXIT /B</pre>
+<p>When handling exceptions during my build scripts, I use this :NOTIFICATION routine to call my speech routine to alert me if I am within earshot.</p>
+<pre class='wp-code-highlight prettyprint'>REM =====================================================================
+REM = NOTIFY - indicate failure
+REM =====================================================================
+:NOTIFY
+echo Error occurred with code %~1
+CALL :SPEAK "Error occurred with code %~1"
+SET Error=%~1
+EXIT /B</pre>
+<p>After executing MSBuild, I check for errors and notify myself audiably if there is a problem.</p>
+<pre class='wp-code-highlight prettyprint'>if %errorlevel% neq 0 CALL :NOTIFY %errorlevel%</pre>
+<p><span style='color: #0040ff; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; line-height: normal; background-color: #f8f8f8;'> </span></p>
+<div class='sharedaddy sd-sharing-enabled'>
+  <div class='robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing'>
+    <h3 class='sd-title'>
+      Share this:
+    </h3>
+    
+    <div class='sd-content'>
+      <ul>
+        <li class='share-email'>
+          <a class='share-email sd-button share-icon' href='http://kindasimple.com/dev/speaking-scripts-with-nircmd/?share=email' rel='nofollow' title='Click to email this to a friend'><span>Email</span></a>
+        </li>
+        <li class='share-twitter'>
+          <a class='share-twitter sd-button share-icon' href='http://kindasimple.com/dev/speaking-scripts-with-nircmd/?share=twitter' id='sharing-twitter-125' rel='nofollow' title='Click to share on Twitter'><span>Twitter</span></a>
+        </li>
+        <li class='share-facebook'>
+          <a class='share-facebook sd-button share-icon' href='http://kindasimple.com/dev/speaking-scripts-with-nircmd/?share=facebook' id='sharing-facebook-125' rel='nofollow' title='Share on Facebook'><span>Facebook</span></a>
+        </li>
+        <li class='share-google-plus-1'>
+          <a class='share-google-plus-1 sd-button share-icon' href='http://kindasimple.com/dev/speaking-scripts-with-nircmd/?share=google-plus-1' id='sharing-google-125' rel='nofollow' title='Click to share on Google+'><span>Google</span></a>
+        </li>
+        <li class='share-end'>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

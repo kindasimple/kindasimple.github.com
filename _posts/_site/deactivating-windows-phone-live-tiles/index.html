@@ -1,0 +1,53 @@
+<p>When alive with activity, the Windows Phone 8 Live Tiles look great. I like the <a href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj206971(v=vs.105).aspx" title="Flip Tile Template Overview on MSDN">Flip Tile Template</a>, in particular. It’s useful to be able to return them to a dormant state, and its not immediately obvious how to do this. Update your tile template Text and TileUri and your tile will clear its content but remain “alive” and flipping.</p>
+
+<p>This problem <a href="http://social.msdn.microsoft.com/Forums/en-US/wpnotifications/thread/9f5c85e0-7bb3-4f2d-9700-9359642f5a72/" title="Windows Phone QA: How do I reset a flipping Mango Tile after push notification?">carries over from Windows Phone 7</a> where, to prevent my dormant tiles from spinning, I would force an error.</p>
+
+<pre><code>
+ShellTile pinnedTile = GetPinnedTile();
+StandardTileData dormantTile = GetDormantTile();
+
+StandardTileData invalidTile = dormantTile.BackBackgroundImage = new Uri(&quot;/&quot;, UriKind.Relative); //this is an invalid uri
+pinnedTile.Update(invalidTile); //prevent flipping by causing error
+
+pinnedTile.Update(dormantTile);
+</code></pre>
+
+<p>This hack doesn’t work in Windows Phone 8. I came across the suggestion to clear all text fields by setting them to empty strings and clear all Uri by setting them equal to null. I find it easier to use an empty template to be sure all properties are nulled.</p>
+
+<pre><code>
+private string FLIP_TEMPLATE_XML = @&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;utf-8&quot;&quot;?&gt;
+&lt;wp:Notification xmlns:wp=&quot;&quot;WPNotification&quot;&quot; Version=&quot;&quot;2.0&quot;&quot;&gt;
+  &lt;wp:Tile Id=&quot;&quot;[Tile ID]&quot;&quot; Template=&quot;&quot;FlipTile&quot;&quot;&gt;
+    &lt;wp:SmallBackgroundImage Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:SmallBackgroundImage&gt;
+    &lt;wp:WideBackgroundImage Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:WideBackgroundImage&gt;
+    &lt;wp:WideBackBackgroundImage Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:WideBackBackgroundImage&gt;
+    &lt;wp:WideBackContent Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:WideBackContent&gt;
+    &lt;wp:BackgroundImage Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:BackgroundImage&gt;
+    &lt;wp:Count Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:Count&gt;
+    &lt;wp:Title Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:Title&gt;
+    &lt;wp:BackBackgroundImage Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:BackBackgroundImage&gt;
+    &lt;wp:BackTitle Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:BackTitle&gt;
+    &lt;wp:BackContent Action=&quot;&quot;Clear&quot;&quot;&gt;&lt;/wp:BackContent&gt;
+  &lt;/wp:Tile&gt;
+&lt;/wp:Notification&gt;&quot;;
+</code></pre>
+
+<p>And then update the tile to force it to go dormant.</p>
+
+<pre><code>
+FlipTileData pinnedTile = GetPinnedTile();
+FlipTileData dormantTile = GetDormantTile();
+
+FlipTileData clearTile = new FlipTileData(FLIP_TEMPLATE_XML.Replace(&quot;[Tile ID]&quot;, &quot;MyTile&quot;));
+pinnedTile.Update(clearTile);
+
+pinnedTile.Update(tileData);
+</code></pre>
+
+<p>This works, but not 100% reliably. A dormant tile will at times, come to life unexpectedly.  I realized that the platform was defeating me after some trial and error.</p>
+
+<p>The problem is that when a live tile is updated, the tile queues up an update to all tile sizes but to be efficient it defers execution of the update until a size needs to be displayed. So, a wide image won’t be downloaded until changing to a wide live tile.  After updating a live tile to a dormant template, changing its size will trigger both the dormant update AND ANY UPDATE ALREADY IN THE QUEUE.</p>
+
+<p>These updates occur asynchronously rather than sequentially. As a result, my update to a dormant tile would happen quickly. The queued update to a flipping tile retrieved images from a remote uri, and so it completed second and the tile remained “live”.</p>
+
+<p>My workaround is to set the tile as dormant every time the application is run, and so the outdated tile eventually works itself out. I don’t yet know of a foolproof way to remove the activity from my live tiles. Do you know of one?</p>

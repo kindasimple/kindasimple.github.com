@@ -10,7 +10,6 @@ tagline: 'Writing Cross Platform HTML5 Apps using PhoneGap and UserGrid'
 ---
 I like Orlando--most of all because its residents enjoy summertime temperatures while the rest of the country is in a deep freeze.
 
-
 There is also a healthy tech community here. There are plenty of developer groups on meetup (including a ".NET users group":http://www.meetup.com/ONETUG/). Last weekend I learned, too late to attend, that "RobotsConf":http://robotsconf.com/ was hosted just a few hours away in Amelia Island and both programmers and Arduino/Raspberry Pi enthusiasts made robots move, drones fly , and made objects on 3D printers. There's a "hackers space":http://familab.org/blog/...there's much for a techie to do.
 
 

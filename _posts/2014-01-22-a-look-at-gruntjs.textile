@@ -147,11 +147,9 @@ There are some options on the _watch_ task to specify the timing and interruptio
 
 This is how Grunt is able to communicate when a refresh is needed. Point the browser at http://localhost:1337/ and you will see a bit of json.
 
-<pre class="prettyprint">
-<code>
+```
 {"tinylr":"Welcome","version":"0.0.4"}
-</code>
-</pre> 
+```
 
 I don't know the details of how LiveReload works, but it is working. Note, I had to introduce a debounceDelay of 1500 ms to prevent an error: 
 
