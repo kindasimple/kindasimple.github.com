@@ -2,7 +2,6 @@
 title: Control a Dream Cheeky USB Missile Launcher with Python
 author: Evan
 layout: blog 
-permalink: /control-a-dream-cheeky-usb-missile-launcher-with-python/
 categories:
   - Programming
   - Technology

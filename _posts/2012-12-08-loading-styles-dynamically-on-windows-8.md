@@ -2,7 +2,6 @@
 title: Loading Styles Dynamically on Windows 8
 author: Evan
 layout: blog 
-permalink: /loading-styles-dynamically-on-windows-8/
 categories:
   - Programming
   - Windows 8

@@ -2,7 +2,6 @@
 title: Phone Backup
 author: Evan
 layout: post
-permalink: /phone-backup/
 categories:
   - Hardware
   - Technology

@@ -2,7 +2,6 @@
 title: Memory Challenges and Recollection
 author: Evan
 layout: blog 
-permalink: /memory-challenges-and-recollection/
 categories:
   - Lifehacks
   - Windows 8

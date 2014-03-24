@@ -2,7 +2,6 @@
 title: Developing in the Cloud
 author: Evan
 layout: blog 
-permalink: /developing-in-the-cloud/
 categories:
   - Programming
   - Technology

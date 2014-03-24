@@ -4,7 +4,7 @@
 
 
 ## Permalinks
-permalink:     '/blog/:year/:title/'
+permalink:     '/blog/:title/'
 relative_permalinks: false
 
 ## Server

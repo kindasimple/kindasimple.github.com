@@ -2,7 +2,6 @@
 title: Speaking Scripts With NirCmd
 author: Evan
 layout: blog 
-permalink: /speaking-scripts-with-nircmd/
 categories:
   - Command Line
 tags:
