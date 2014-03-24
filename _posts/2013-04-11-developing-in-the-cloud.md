@@ -18,7 +18,7 @@ tags:
  [6]: http://aws.amazon.com/
  [7]: http://programmers.stackexchange.com/questions/33955/using-ec2-instance-as-main-development-platform
  [8]: http://blog.michaelckennedy.net/2011/06/13/building-a-cloud-os-for-net-developers-part-2/
-I want to move my development environment to the cloud.  My current setup is poor for a lot of reasons. I have a 120 SSD with half the space dedicated to a Windows 7 instance and the other half being taken up by a Windows 8 VHD.  Both are cluttered, and reaching their storage limits.  What I would like to have is a well curated development environment to do C# development for Windows Mobile apps.  Going to the cloud and taking advantage of accessibility and scalability is exactly what i am looking for<!--more-->
+I want to move my development environment to the cloud.  My current setup is poor for a lot of reasons. I have a 120 SSD with half the space dedicated to a Windows 7 instance and the other half being taken up by a Windows 8 VHD.  Both are cluttered, and reaching their storage limits.  What I would like to have is a well curated development environment to do C# development for Windows Mobile apps.  Going to the cloud and taking advantage of accessibility and scalability is exactly what i am looking for.
 
 With Citrix I could create my own local cloud but I find Amazon AWS & Azure much more promising.  There are plenty of ways to get your web development into the cloud through online services.  [Cloud9ide][1] provides a web development environment.  [Cloudshare][2] gives access to a cloud development platform for Beta Microsoft products.
 

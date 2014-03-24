@@ -19,7 +19,7 @@ Nir Sofer has written a fun utility that I have been using to make my scripts ta
 
 Text-To-Speach is available at least as far back as Windows XP. I&#8217;m not sure how to call it directly, but using nircmd it is as simple as
 
-```{.prettyprint}
+```
 nircmd speak text "Hello" 2 60
 ```
 
