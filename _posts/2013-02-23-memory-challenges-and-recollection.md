@@ -24,13 +24,10 @@ I&#8217;ve been working on a memory hack that will serve as a reliable memory ai
 
 As luck would have it, a friend spontaneously challenged me to a memory competition.  This gives me reason to complete a hobby project, a [windows phone app][4] called [Recollection][5]. Now I am working to publish a beta version for Windows 8.
 
-<div id="attachment_104" style="width: 310px" class="wp-caption aligncenter">
-  <a href="http://i0.wp.com/kindasimple.com/dev/wp-content/uploads/2013/02/Recollection.png"><img class="size-medium wp-image-104" alt="Recollection App" src="http://i0.wp.com/kindasimple.com/dev/wp-content/uploads/2013/02/Recollection-300x168.png?fit=300%2C168" data-recalc-dims="1" /></a><p class="wp-caption-text">
-    Recollection for Windows 8
-  </p>
-</div>
 
-<!--more-->While the phone is handy for on the go queries and memorization, the desktop much better for the serious work of constructing peg word lists since there is much more real estate and better responsiveness.  And while there are [good lists ready made][6], I prefer the personalization of making my own.  Here is my current list made with my own apps.  My Windows 8 app will be available soon if the Certification gods are kind!
+[![Recollection App](http://i0.wp.com/kindasimple.com/dev/wp-content/uploads/2013/02/Recollection-300x168.png?fit=300%2C168 "Recollection App")](http://i0.wp.com/kindasimple.com/dev/wp-content/uploads/2013/02/Recollection.png")
+
+While the phone is handy for on the go queries and memorization, the desktop much better for the serious work of constructing peg word lists since there is much more real estate and better responsiveness.  And while there are [good lists ready made][6], I prefer the personalization of making my own.  Here is my current list made with my own apps.  My Windows 8 app will be available soon if the Certification gods are kind!
 
 
 No | Key
