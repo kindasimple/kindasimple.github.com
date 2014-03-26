@@ -30,21 +30,21 @@ nav-projects:	/projects
 nav-rss:		/blog/feed.xml
 nav-blog:		/blog
 
-link-base_url:           http://kindasimplesolutions.com
-link-github:             https://github.com/kindasimple
-link-stack_overflow:     http://stackoverflow.com/users/491506/kindasimple
-link-stack_overflow-avatar:     http://stackoverflow.com/users/flair/491506.png
-link-twitter:            https://twitter.com/kindasimple
-link-coderbits:          https://coderbits.com/kindasimple
-link-blog:               http://kindasimplesolutions.com/blog
-link-url:                http://kindasimplesolutions.com
+link-base_url:           	/
+link-github:             	https://github.com/kindasimple
+link-stack_overflow:     	http://stackoverflow.com/users/491506/kindasimple
+link-stack_overflow-avatar: http://stackoverflow.com/users/flair/491506.png
+link-twitter:            	https://twitter.com/kindasimple
+link-coderbits:          	https://coderbits.com/kindasimple
+link-blog:               	http://kindasimplesolutions.com/blog
+link-url:                	http://kindasimplesolutions.com
 link-pgh_techfest-code:     https://github.com/kindasimple/PGHTechFest
-link-pgh_techfest-win8:          http://apps.microsoft.com/windows/en-us/app/pghtechfest/630784e7-6037-494c-94d8-6eea9f468125
+link-pgh_techfest-win8:     http://apps.microsoft.com/windows/en-us/app/pghtechfest/630784e7-6037-494c-94d8-6eea9f468125
 link-pgh_techfest-wp8:		http://www.windowsphone.com/en-us/store/app/pghtechfest/bdd8a816-173b-4b2e-9296-978e88053605
-link-recollection-win8:          http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
-link-recollection-wp8:           http://www.windowsphone.com/en-us/store/app/recollection/8de271b5-437c-4a26-b2cd-987148b4955b
-link-recollection-web:           http://mnemonal.com
-link-big_arms_club-web:				http://bigarmsclub.com
+link-recollection-win8:     http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
+link-recollection-wp8:      http://www.windowsphone.com/en-us/store/app/recollection/8de271b5-437c-4a26-b2cd-987148b4955b
+link-recollection-web:      http://mnemonal.com
+link-big_arms_club-web:		http://bigarmsclub.com
 email-link:					mailto:kindasimple@gmail.com
 email-text:					kindasimple@gmail.com
 

@@ -19,13 +19,13 @@ Nir Sofer has written a fun utility that I have been using to make my scripts ta
 
 Text-To-Speach is available at least as far back as Windows XP. I&#8217;m not sure how to call it directly, but using nircmd it is as simple as
 
-<pre><code class="prettyprint">
+<pre class="prettyprint"><code>
 nircmd speak text "Hello" 2 60
-</pre></code>
+</code></pre>
 
 The parameters are the speed and the volume of the narrator. To add narration to my scripts I call :SPEAK instead of echo to write to the console.
 
-<pre><code class="prettyprint">
+<pre class="prettyprint"><code>
 REM =====================================================================
 REM = SPEAK - vocalize command
 REM =====================================================================
@@ -37,11 +37,11 @@ echo %~1
 nircmd speak text "%~1" 2 60
 )
 EXIT /B
-</pre></code>
+</code></pre>
 
 When handling exceptions during my build scripts, I use this :NOTIFICATION routine to call my speech routine to alert me if I am within earshot.
 
-<pre><code class="prettyprint">
+<pre class="prettyprint"><code>
 REM =====================================================================
 REM = NOTIFY - indicate failure
 REM =====================================================================
@@ -50,10 +50,10 @@ echo Error occurred with code %~1
 CALL :SPEAK "Error occurred with code %~1"
 SET Error=%~1
 EXIT /B
-</pre></code>
+</code></pre>
 
 After executing MSBuild, I check for errors and notify myself audiably if there is a problem.
 
-<pre><code class="prettyprint">
+<pre class="prettyprint"><code>
 if %errorlevel% neq 0 CALL :NOTIFY %errorlevel%
-</pre></code>
+</code></pre>

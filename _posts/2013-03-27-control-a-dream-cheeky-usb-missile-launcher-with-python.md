@@ -27,7 +27,7 @@ There was a bit of setup.  My laptop running Ubuntu was the Hardy Heron release
 
 The script to control the USB Missile launcher is in Python and depends on [PyUSB][4] for hardware IO.  The vendor and product ID codes were slightly different, but [were documented  elsewhere][5].
 
-<pre><code class="prettyprint">
+<pre class="prettyprint"><code>
 #New Model
 usb.core.find(idVendor=0x2123, idProduct=0x1010)
 #My Older Model
