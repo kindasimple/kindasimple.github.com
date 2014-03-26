@@ -24,13 +24,12 @@ I&#8217;ve been working on a memory hack that will serve as a reliable memory ai
 As luck would have it, a friend spontaneously challenged me to a memory competition.  This gives me reason to complete a hobby project, a [windows phone app][4] called [Recollection][5]. Now I am working to publish a beta version for Windows 8.
 
 
-[![Recollection App](http://i0.wp.com/kindasimple.com/dev/wp-content/uploads/2013/02/Recollection-300x168.png?fit=300%2C168 "Recollection App")](http://i0.wp.com/kindasimple.com/dev/wp-content/uploads/2013/02/Recollection.png")
+[![Recollection App](https:kindasimple.s3.amazonaws.com/wp-content/uploads/2013/02/Recollection-300x168.png "Recollection App")](https:kindasimple.s3.amazonaws.com/wp-content/uploads/2013/02/Recollection.png)
 
 While the phone is handy for on the go queries and memorization, the desktop much better for the serious work of constructing peg word lists since there is much more real estate and better responsiveness.  And while there are [good lists ready made][6], I prefer the personalization of making my own.  Here is my current list made with my own apps.  My Windows 8 app will be available soon if the Certification gods are kind!
 
-
-No | Key
------|--:
+| No | Key |
+|----|----:|
 0|SEA
 1|TEA
 2|NEW
@@ -64,7 +63,7 @@ No | Key
 31|MUD
 32|MOON
 33|MOM
-4|HOMER
+34|HOMER
 35|MAIL
 36|MACHO
 37|MACAW

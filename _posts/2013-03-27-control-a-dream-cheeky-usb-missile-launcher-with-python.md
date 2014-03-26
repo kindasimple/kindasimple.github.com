@@ -21,7 +21,7 @@ tags:
  [7]: http://jenkins-ci.org/
 I had the idea to set up my [Raspberry Pi][1] as a build server.  Google, perhaps knowing me too well, led me to [an interesting project][2] that uses a USB Missile Launcher to indicate broken builds by launching missiles at the offending programmer.  I just happen to own a [missile launcher][3] of a different model created by the same company, and so how could I not give this project a go?
 
-![Dream Cheeky Missile Launcher](http://i2.wp.com/kindasimple.com/dev/wp-content/uploads/2013/03/MissileLauncher.jpg?fit=624%2C9999 "A picture of a usb missile launcher")
+![Dream Cheeky Missile Launcher](https://kindasimple.s3.amazonaws.com/wp-content/uploads/2013/03/MissileLauncher.jpg "A picture of a usb missile launcher")
 
 There was a bit of setup.  My laptop running Ubuntu was the Hardy Heron release and several cycles behind the current release *Quantal Quetzal*.  I ended up doing a clean install.
 
