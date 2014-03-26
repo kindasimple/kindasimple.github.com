@@ -20,26 +20,26 @@ While designing flexible layouts is a must; there are limits. Add to that the di
 
 On windows 8 I can easily determine the screen size and the resolution and adjust the styles accordingly. The basic templates handle the current window&#8217;s SizeChanged event giving me an opportunity to adjust for a larger screen size.
 
-```
+<pre><code class="prettyprint">
 private void WindowSizeChanged(object sender, WindowSizeChangedEventArgs e)
 {
     LoadStylesForSize(e.Size);
     this.InvalidateVisualState();
 }
-```
+</pre></code>
 
 or I can adjust for a change in resolution in the event handler for the DisplayProperties LogicalDpiChanged event
 
-```
+<pre><code class="prettyprint">
 private void DisplayProperties_LogicalDpiChanged(object sender)
 {
   LoadStylesForResolution(DisplayProperties.ResolutionScale);
 }
-```
+</pre></code>
 
 To load a new template, I create a new MergedDictionary with the styles that I want and apply it to the current application resources.
 
-```
+<pre><code class="prettyprint">
 private void LoadStylesForSize(Size size)
 {
   ResourceDictionary merged = new ResourceDictionary();
@@ -67,7 +67,7 @@ private void LoadStylesForSize(Size size)
 
   this.Frame.Navigate(this.GetType(), "AllGroups");
  }
-```
+</pre></code>
 
 When you are creating your themes, remember to pay close attention to dependencies so that a resource doesn&#8217;t try to reference another resource that is not yet defined. See MSDN on [Merged Dictionaries][1] to see what resource is loaded and when. Also, you will have to move all resources from App.xaml into your generic resource dictionary because they will be cleared when you reset your application resources to your new merged dictionary.
 

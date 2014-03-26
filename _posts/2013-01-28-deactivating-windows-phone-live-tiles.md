@@ -17,7 +17,7 @@ When alive with activity, the Windows Phone 8 Live Tiles look great. I like the 
 
 This problem [carries over from Windows Phone 7](http://social.msdn.microsoft.com/Forums/en-US/wpnotifications/thread/9f5c85e0-7bb3-4f2d-9700-9359642f5a72/ "Windows Phone QA: How do I reset a flipping Mango Tile after push notification?") where, to prevent my dormant tiles from spinning, I would force an error.
 
-```
+<pre><code class="prettyprint">
 ShellTile pinnedTile = GetPinnedTile();
 StandardTileData dormantTile = GetDormantTile();
 
@@ -25,11 +25,11 @@ StandardTileData invalidTile = dormantTile.BackBackgroundImage = new Uri("/", Ur
 pinnedTile.Update(invalidTile); //prevent flipping by causing error
 
 pinnedTile.Update(dormantTile);
-```
+</pre></code>
 
 This hack doesn&#8217;t work in Windows Phone 8. I came across the suggestion to clear all text fields by setting them to empty strings and clear all Uri by setting them equal to null. I find it easier to use an empty template to be sure all properties are nulled.
 
-```
+<pre><code class="prettyprint">
 private string FLIP_TEMPLATE_XML = @"<?xml version=""1.0"" encoding=""utf-8""?>
 <wp:Notification xmlns:wp=""WPNotification"" Version=""2.0"">
   <wp:Tile Id=""[Tile ID]"" Template=""FlipTile"">
@@ -45,11 +45,11 @@ private string FLIP_TEMPLATE_XML = @"<?xml version=""1.0"" encoding=""utf-8""?>
     <wp:BackContent Action=""Clear""></wp:BackContent>
   </wp:Tile>
 </wp:Notification>";
-```
+</pre></code>
 
 And then update the tile to force it to go dormant.
 
-```
+<pre><code class="prettyprint">
 FlipTileData pinnedTile = GetPinnedTile();
 FlipTileData dormantTile = GetDormantTile();
 
@@ -57,7 +57,7 @@ FlipTileData clearTile = new FlipTileData(FLIP_TEMPLATE_XML.Replace("[Tile ID]",
 pinnedTile.Update(clearTile);
 
 pinnedTile.Update(tileData);
-```
+</pre></code>
 
 This works, but not 100% reliably. A dormant tile will at times, come to life unexpectedly.  I realized that the platform was defeating me after some trial and error.
 
