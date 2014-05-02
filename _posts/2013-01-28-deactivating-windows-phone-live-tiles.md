@@ -1,7 +1,7 @@
 ---
 title: Deactivating Windows Phone Live Tiles
 author: Evan
-layout: blog 
+layout: blog
 categories:
   - Programming
   - Technology
@@ -17,19 +17,18 @@ When alive with activity, the Windows Phone 8 Live Tiles look great. I like the 
 
 This problem [carries over from Windows Phone 7](http://social.msdn.microsoft.com/Forums/en-US/wpnotifications/thread/9f5c85e0-7bb3-4f2d-9700-9359642f5a72/ "Windows Phone QA: How do I reset a flipping Mango Tile after push notification?") where, to prevent my dormant tiles from spinning, I would force an error.
 
-<pre class="prettyprint"><code>
+```
 ShellTile pinnedTile = GetPinnedTile();
 StandardTileData dormantTile = GetDormantTile();
 
 StandardTileData invalidTile = dormantTile.BackBackgroundImage = new Uri("/", UriKind.Relative); //this is an invalid uri
 pinnedTile.Update(invalidTile); //prevent flipping by causing error
 
-pinnedTile.Update(dormantTile);
-</code></pre>
+pinnedTile.Update(dormantTile);```
 
 This hack doesn&#8217;t work in Windows Phone 8. I came across the suggestion to clear all text fields by setting them to empty strings and clear all Uri by setting them equal to null. I find it easier to use an empty template to be sure all properties are nulled.
 
-<pre class="prettyprint"><code>
+```XML
 private string FLIP_TEMPLATE_XML = @"&lt;?xml version=""1.0"" encoding=""utf-8""?>
 &lt;wp:Notification xmlns:wp=""WPNotification"" Version=""2.0"">
   &lt;wp:Tile Id=""[Tile ID]"" Template=""FlipTile"">
@@ -44,12 +43,10 @@ private string FLIP_TEMPLATE_XML = @"&lt;?xml version=""1.0"" encoding=""utf-8""
     &lt;wp:BackTitle Action=""Clear"">&lt;/wp:BackTitle>
     &lt;wp:BackContent Action=""Clear"">&lt;/wp:BackContent>
   &lt;/wp:Tile>
-&lt;/wp:Notification>"
-</code></pre>
-
+&lt;/wp:Notification>"```
 And then update the tile to force it to go dormant.
 
-<pre class="prettyprint"><code>
+```XML
 FlipTileData pinnedTile = GetPinnedTile();
 FlipTileData dormantTile = GetDormantTile();
 
@@ -57,7 +54,7 @@ FlipTileData clearTile = new FlipTileData(FLIP_TEMPLATE_XML.Replace("[Tile ID]",
 pinnedTile.Update(clearTile);
 
 pinnedTile.Update(tileData);
-</code></pre>
+```
 
 This works, but not 100% reliably. A dormant tile will at times, come to life unexpectedly.  I realized that the platform was defeating me after some trial and error.
 

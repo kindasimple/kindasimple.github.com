@@ -1,7 +1,7 @@
 ---
 title: Control a Dream Cheeky USB Missile Launcher with Python
 author: Evan
-layout: blog 
+layout: blog
 categories:
   - Programming
   - Technology
@@ -27,12 +27,11 @@ There was a bit of setup.  My laptop running Ubuntu was the Hardy Heron release
 
 The script to control the USB Missile launcher is in Python and depends on [PyUSB][4] for hardware IO.  The vendor and product ID codes were slightly different, but [were documented  elsewhere][5].
 
-<pre class="prettyprint"><code>
+```
 #New Model
 usb.core.find(idVendor=0x2123, idProduct=0x1010)
 #My Older Model
-usb.core.find(idVendor=0x0a81, idProduct=0x0701)
-</pre></code>
+usb.core.find(idVendor=0x0a81, idProduct=0x0701)```
 
 I&#8217;m not big into Python, so debugging this script was foreign to me.  I found some [documentation][5] and with a few imports and commands I learned n = next, c = continue&#8230;enough to be dangerous.  And so I modified the script and submitted my first Github Pull Request.
 

@@ -1,8 +1,7 @@
 ## Dependencies
-markdown:         redcarpet
+markdown: kramdown
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-pygments:         true
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "prettify"]
 
 
 ## Permalinks
@@ -11,15 +10,41 @@ relative_permalinks: false
 
 ## Server
 #destination:      ./_gh_pages
-exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "README.md", "serve.cmd"]
+exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "README.md", "serve.cmd", 'node_modules']
 include:            ['_pages']
 #port:             9001
 
+gems:
+  - jekyll-sitemap
 
+## Defaults
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "blog"
+      author: Evan
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: true
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
 
 ## Custom vars
 name: KindaSimple Solutions
-description: The projects 
+description: The projects
 
 ## Navigation
 nav-about:	/about
