@@ -6,7 +6,7 @@ categories: [dev]
 tags: [search, python, kml, heuristic, AStar]
 tagline: 'Implementation of different search algorithms'
 ---
- [google-map]: https://maps.google.com/maps?q=https%3A//kindasimplesolutions.com/assets/kml/astar_dijkstra.kml "Search results on google maps"
+ [google-map]: https://maps.google.com/maps?q=http%3A//kindasimplesolutions.com/assets/kml/astar_dijkstra.kml "Search results on google maps"
  [sort]: http://kindasimplesolutions.com/blog/upsifting-heapsort/ "df"
  [SO-point-line-distance]: http://stackoverflow.com/questions/849211/shortest-distance-between-Basht-and-a-line-segment "dsf"
  [google-fusion-tables]: https://support.google.com/fusiontables/answer/2571232 "df"
