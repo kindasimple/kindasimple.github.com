@@ -14,9 +14,9 @@ tagline: 'Implementation of different search algorithms'
  [dijkstras-algorithm-animation]: http://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif
  [a-star]: http://en.wikipedia.org/wiki/A*_search_algorithm "A* search on wikipedia"
  [github-search]: https://github.com/kindasimple/play/tree/master/python/search "Seach code in python on Github"
- [search-result]: https://kindasimplesolutions.com.s3.amazonaws.com/images/search-kml/search-result.png
- [search-dijkstra]: https://kindasimplesolutions.com.s3.amazonaws.com/images/search-kml/dijkstra-search-path.png
- [search-astar]: https://kindasimplesolutions.com.s3.amazonaws.com/images/search-kml/astar-search-path.png
+ [search-result]: //kindasimplesolutions.com.s3.amazonaws.com/images/search-kml/search-result.png
+ [search-dijkstra]: //kindasimplesolutions.com.s3.amazonaws.com/images/search-kml/dijkstra-search-path.png
+ [search-astar]: //kindasimplesolutions.com.s3.amazonaws.com/images/search-kml/astar-search-path.png
 I moved on from [sort][sort] to search and implemented a few search algorithms in python from pseudocode on wikipedia. I coded a simple backtracking algorithm as well as Dijkstra's and an A* search.
 
 ![Search Result][search-result]
