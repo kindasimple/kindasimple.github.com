@@ -21,13 +21,13 @@ Text-To-Speach is available at least as far back as Windows XP. I&#8217;m not su
 
 
 
-```Shell
+```bash
 nircmd speak text "Hello" 2 60
 ```
 
 The parameters are the speed and the volume of the narrator. To add narration to my scripts I call :SPEAK instead of echo to write to the console.
 
-```Shell
+```bash
 REM =====================================================================
 REM = SPEAK - vocalize command
 REM =====================================================================
@@ -43,7 +43,7 @@ EXIT /B
 
 When handling exceptions during my build scripts, I use this :NOTIFICATION routine to call my speech routine to alert me if I am within earshot.
 
-```Shell
+```bash
 REM =====================================================================
 REM = NOTIFY - indicate failure
 REM =====================================================================
@@ -56,6 +56,6 @@ EXIT /B
 
 After executing MSBuild, I check for errors and notify myself audiably if there is a problem.
 
-```Shell
+```bash
 if %errorlevel% neq 0 CALL :NOTIFY %errorlevel%
 ```

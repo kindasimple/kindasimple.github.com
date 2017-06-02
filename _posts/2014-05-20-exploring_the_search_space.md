@@ -34,7 +34,7 @@ The brute force backtracking algorithm that I implemented overflowed the stack f
 
 [A*][a-star] It is essentially Dijkstra's algorithm that chooses a path based on a heuristic evaluation of neighbors. My heuristic was to score neighbors on how close they are to a line segment that runs from the start to the finish. The math for points and lines in vector space is abstract and not so familiar. I started reading webpages on math for parametric equations and quickly moved onto this [Stack Overflow thread][SO-point-line-distance] where the code was pretty opaque and many answers incorrect. I ended up using this answer which seemed the most strait-forward.
 
-```Python
+```python
   def dist2line2(x,y,line):
      x1,y1,x2,y2=line
      vx = x1 - x

@@ -79,13 +79,13 @@ The _watch_ task for Grunt has a LiveReload feature that starts a service that o
 
 As a prerequisite, install "Jekyll":http://jekyllrb.com/. This depends on Ruby. On a Mac, installing Jekyll is as simple as:
 
-```Bash
+```bash
 npm install jekyll
 ```
 
 Then, create a jekyll website and install grunt into the site root with the _watch_ and the _shell_ task runner packages.
 
-```Bash
+```bash
 jekyll install
 npm install grunt --save-dev
 npm install grunt-contrib-watch --save-dev
@@ -93,7 +93,7 @@ npm install grunt-shell --save-dev
 ```
 A quick aside; Jekyll has a watch feature built-in that will rebuild the site when the contents change. To enable it you simply serve the Jekyll site with the watch flag.
 
-```Bash
+```bash
 jekyll serve -w // watch files
 ```
 
@@ -145,7 +145,7 @@ This is how Grunt is able to communicate when a refresh is needed. Point the bro
 
 I don't know the details of how LiveReload works, but it is working. Note, I had to introduce a debounceDelay of 1500 ms to prevent an error:
 
-```Bash
+```bash
 code. Fatal error: Maximum call stack size exceeded
 ```
 
