@@ -1,7 +1,6 @@
 ---
 title: Garbage Characters in XML
 author: Evan
-layout: blog
 categories:
   - Running
   - Data

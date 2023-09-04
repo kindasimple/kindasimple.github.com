@@ -1,6 +1,5 @@
 ---
 title: Upsifting in a Heapsort
-layout: blog
 author: evan
 categories: [dev]
 tags: [sorting, python]

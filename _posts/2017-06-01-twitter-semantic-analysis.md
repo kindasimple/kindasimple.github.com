@@ -1,7 +1,6 @@
 ---
 title: Twitter analysis
 author: Evan
-layout: blog
 categories:
   - Data
 tags:
@@ -10,37 +9,37 @@ tags:
 ---
 
 Statistical methods for modeling and analyzing data are all
-the buzz, and have been for a while now. Tooling has come a long way, as have educational 
-resources and open source projects. I'll present here my application of the walkthrough 
+the buzz, and have been for a while now. Tooling has come a long way, as have educational
+resources and open source projects. I'll present here my application of the walkthrough
 posted by Marco Bonzanini on his [Blog](https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/).
 It was a good start to learn the fundamentals of semantic analysis, and a soft introduction
 to programming with python.
 
 *Harvesting Tweets*
 
-My data harvesting efforts started with the node.js twitter package on npm. Harvesting 
-data from twitter's streaming api is conveniently supported by many packages produced 
-by the community. Unfortunately, its had to tell which package is the best fit. The 
-node twitter package required a custom modification to handle stream interruptions, which, 
+My data harvesting efforts started with the node.js twitter package on npm. Harvesting
+data from twitter's streaming api is conveniently supported by many packages produced
+by the community. Unfortunately, its had to tell which package is the best fit. The
+node twitter package required a custom modification to handle stream interruptions, which,
 though fairly trivial, caused the service to stop unexpectedly when the connection was dropped.
 
-I found the [twarc](https://github.com/DocNow/twarc) library to be a handy and painless way to quickly configure a new twitter application, 
-and there are associate utilities that made for easy bounds checking. Because I want to run 
-multiple configurations at once, I did end up writing configuration code in a twitter service application 
-that is responsible for establishing multiple twitter streams and filtering the results beyond what the 
+I found the [twarc](https://github.com/DocNow/twarc) library to be a handy and painless way to quickly configure a new twitter application,
+and there are associate utilities that made for easy bounds checking. Because I want to run
+multiple configurations at once, I did end up writing configuration code in a twitter service application
+that is responsible for establishing multiple twitter streams and filtering the results beyond what the
 streaming api filters enable.
 
 With a collection of tweets, it was fairly easy to iterate over them and apply our analysis.
 
 *Classifier*
 
-The classifier implemented is termed PMI-IR proposed by Turney(2002) [http://www.aclweb.org/anthology/P02-1053.pdf](http://www.aclweb.org/anthology/P02-1053.pdf). It is a straitforward unsupervised learning technique 
-that evaluates the polarity and its valence based on closeness of terms to those from an apriori positive and negative lexicon, 
-where closeness is defined by the number of times the words cooccur in the data). These lexicon were obtained from 
+The classifier implemented is termed PMI-IR proposed by Turney(2002) [http://www.aclweb.org/anthology/P02-1053.pdf](http://www.aclweb.org/anthology/P02-1053.pdf). It is a straitforward unsupervised learning technique
+that evaluates the polarity and its valence based on closeness of terms to those from an apriori positive and negative lexicon,
+where closeness is defined by the number of times the words cooccur in the data). These lexicon were obtained from
 [Bing Liu](http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon) at the authors recommendation.
 
-With a corpus of tweets, the a processing pass iterates over each tweet to count the frequency of each term and to 
-build a cooccurrence matrix to track how often terms are used in the same text. 
+With a corpus of tweets, the a processing pass iterates over each tweet to count the frequency of each term and to
+build a cooccurrence matrix to track how often terms are used in the same text.
 
 ```python
 def process_tweets(self, tweet):
@@ -61,8 +60,8 @@ def process_tweets(self, tweet):
     })
 ```
 
-From these counts, we can create a PMI matrix for all terms by using the document frequency of all terms to compute the 
-probability of encountering a term and to divide it by the probabilty of encountering a cooccurrring term, 
+From these counts, we can create a PMI matrix for all terms by using the document frequency of all terms to compute the
+probability of encountering a term and to divide it by the probabilty of encountering a cooccurrring term,
 then transforming the result by applying a log function.
 
 ```python
@@ -85,18 +84,18 @@ def pmi(self):
     pmi = defaultdict(lambda : defaultdict(int))
     for t1 in p_t:
         for t2 in self.com[t1]:
-            denom = p_t[t1] * p_t[t2] 
+            denom = p_t[t1] * p_t[t2]
             term1, term2 = sorted([t1, t2])
             pmi[term1][term2] = math.log((p_t_com[term1][term2]) / (denom), 2)
     return pmi
 ```
 
-Once we have all PMI scores for all pairs of words, we can compute a term's orientation valence by aggregating 
-the PMI of a term and each term in the positive and negative lexicon. 
+Once we have all PMI scores for all pairs of words, we can compute a term's orientation valence by aggregating
+the PMI of a term and each term in the positive and negative lexicon.
 
 ```python
 def orientation_valence(self, pmi):
-    """calcluate the probability of a term and its cooccurrences to determine a 
+    """calcluate the probability of a term and its cooccurrences to determine a
     valence score
     See: https://marcobonzanini.com/2015/05/17/mining-twitter-data-with-python-part-6-sentiment-analysis-basics/
     Returns:
@@ -112,21 +111,21 @@ def orientation_valence(self, pmi):
         except:
             pass
 
-    semantic_sorted = sorted(semantic_orientation.items(), 
-                        key=operator.itemgetter(1), 
+    semantic_sorted = sorted(semantic_orientation.items(),
+                        key=operator.itemgetter(1),
                         reverse=True)
     return semantic_orientation
 ```
 
-We then have an orientation for each 
+We then have an orientation for each
 term, and the semantic orientation of a sentence can be the aggregate orientation of its consituent words.
 
 *Implementation*
 
-I followed the tutorial with two exceptions. The first was to sort the pmi indices because of the way the 
-cooccurrence matrix was created requires that these terms be in order. The second is to add a bias to the terms 
-from our lexicon to increase the chance of them having a positive or negative polarity, to offset deviations 
-due to a PMI that has changed its meaning due to the context it is frequently found in. 
+I followed the tutorial with two exceptions. The first was to sort the pmi indices because of the way the
+cooccurrence matrix was created requires that these terms be in order. The second is to add a bias to the terms
+from our lexicon to increase the chance of them having a positive or negative polarity, to offset deviations
+due to a PMI that has changed its meaning due to the context it is frequently found in.
 
 A set of tweets
 
@@ -136,7 +135,7 @@ A set of tweets
             { u'text': u'Cry because you are terrible' },
             { u'text': u'Where have all the sunny days gone?' }]
 
-and a vocabulary of words with known polarity 
+and a vocabulary of words with known polarity
 
 
     positive_vocab = [
@@ -153,27 +152,27 @@ and a vocabulary of words with known polarity
 
 produces a semantic orientation for each of the terms
 
-    {u'gone': 2.321928094887362, 
-    u'widget': -2.321928094887362, 
-    u'would': 1.0, 
-    u'rather': 1.0, 
-    u'could': 1.0, 
-    u'cry': -1.5, 
-    u'sunny': 1.5, 
-    u'terrible': -2.821928094887362, 
-    u'days': 2.321928094887362, 
-    u'useless': -1.5, 
-    u'angry': -1.5, 
+    {u'gone': 2.321928094887362,
+    u'widget': -2.321928094887362,
+    u'would': 1.0,
+    u'rather': 1.0,
+    u'could': 1.0,
+    u'cry': -1.5,
+    u'sunny': 1.5,
+    u'terrible': -2.821928094887362,
+    u'days': 2.321928094887362,
+    u'useless': -1.5,
+    u'angry': -1.5,
     u'happy': 0.17807190511263782}
-    
+
 
 and yeilds an aggregate orentation for each sentence
-    
+
     [
-      {u'text': u'Where have all the sunny days gone?', 'score': 0.7679820237218405}, 
-      {u'text': u'I could cry but I would rather be happy', 'score': 0.1864524339014042}, 
-      {u'text': u'I was angry before but now I am over it', 'score': -0.15}, 
-      {u'text': u'Cry because you are terrible', 'score': -0.8643856189774723}, 
+      {u'text': u'Where have all the sunny days gone?', 'score': 0.7679820237218405},
+      {u'text': u'I could cry but I would rather be happy', 'score': 0.1864524339014042},
+      {u'text': u'I was angry before but now I am over it', 'score': -0.15},
+      {u'text': u'Cry because you are terrible', 'score': -0.8643856189774723},
       {u'text': u'What a useless widget', 'score': -0.9554820237218405}
     ]
 
@@ -184,7 +183,7 @@ The python code is below
     from __future__ import division
     from nltk.corpus import stopwords
     import string
-    import re  
+    import re
     import nltk
     from collections import defaultdict
     from collections import Counter
@@ -247,10 +246,10 @@ The python code is below
             return self.__com
 
         def apply(self, terms_only):
-            for i in range(len(terms_only)-1):            
+            for i in range(len(terms_only)-1):
                 for j in range(i+1, len(terms_only)):
-                    w1, w2 = sorted([terms_only[i], terms_only[j]])  
-                    
+                    w1, w2 = sorted([terms_only[i], terms_only[j]])
+
                     if w1 != w2:
                         self.__com[w1][w2] += 1
 
@@ -288,8 +287,8 @@ The python code is below
 
         def apply_orientation(self, tweets, so):
             """Apply semantic orientation to tweet
-            
-            Args: 
+
+            Args:
                 texts (str[]): array of all tweets
                 so (dict): orientation rules
             """
@@ -326,7 +325,7 @@ The python code is below
             for t1 in p_t:
                 for t2 in self.com[t1]:
                     try:
-                        denom = p_t[t1] * p_t[t2] 
+                        denom = p_t[t1] * p_t[t2]
                         term1, term2 = sorted([t1, t2])
                         #print "%s and %s for %s-%s" % (p_t_com[t1][t2], denom, t1, t2)
                         pmi[term1][term2] = math.log((p_t_com[term1][term2]) / (denom), 2)
@@ -345,7 +344,7 @@ The python code is below
             return lookup[term1][term2]
 
         def orientation_valence(self, pmi):
-            """calcluate the probability of a term and its cooccurrences to determine a 
+            """calcluate the probability of a term and its cooccurrences to determine a
             valence score
             See: https://marcobonzanini.com/2015/05/17/mining-twitter-data-with-python-part-6-sentiment-analysis-basics/
             Returns:
@@ -361,8 +360,8 @@ The python code is below
                 except:
                     pass
 
-            semantic_sorted = sorted(semantic_orientation.items(), 
-                                key=operator.itemgetter(1), 
+            semantic_sorted = sorted(semantic_orientation.items(),
+                                key=operator.itemgetter(1),
                                 reverse=True)
             return semantic_orientation
 

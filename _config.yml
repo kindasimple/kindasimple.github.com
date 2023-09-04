@@ -3,6 +3,45 @@ markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "prettify"]
 
+theme: minimal-mistakes-jekyll
+repository: kindasimple/kindasimple.github.io
+minimal_mistakes_skin: "dark"
+logo: "/assets/images/88x88.png"
+toc: true
+
+author:
+  name: "Evan White"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Experienced Tech Leader Specializing in Mobile Development, Compute Platforms & Business Applications"
+  location : "Bay Area, CA"
+  links:
+    - label: "kindasimple"
+      icon: "fas fa-fw fa-link"
+      url: "http://kindasimple.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/kindasimple"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kindasimple"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/kindasimple"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kindasimple/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/kindasimple"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kindasimple"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/kindasimple"
 
 ## Permalinks
 permalink:     '/blog/:title/'
@@ -14,17 +53,24 @@ exclude:          [".gitignore", "CNAME", "CNAME", "LICENSE", "params.json", "RE
 include:            ['_pages']
 #port:             9001
 
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-include-cache
+  - minimal-mistakes-jekyll
 
 ## Defaults
 defaults:
-  -
-    scope:
-      path: "" # empty string for all files
+  # _posts
+  - scope:
+      path: ""
+      type: posts
     values:
-      layout: "blog"
-      author: Evan
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 kramdown:
   input: GFM
@@ -33,45 +79,18 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: true
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+  enable_coderay: true
+  syntax_highlighter_opts:
+    wrap: div
+    line_numbers: inline
+    line_numbers_start: 1
+    tab_width: 4
+    bold_every: 10
+    css: style
 
 ## Custom vars
-name: KindaSimple Solutions
-description: The projects
-
-## Navigation
-nav-about:	/about
-nav-recollection-wp:            /MajorSystem
-nav-pgh_techfest-wp:          /PGHTechFest
-nav-archives:	/archive
-nav-projects:	/projects
-nav-rss:		/blog/feed.xml
-nav-blog:		/blog
-
-link-base_url:           	/
-link-github:             	https://github.com/kindasimple
-link-stack_overflow:     	http://stackoverflow.com/users/491506/kindasimple
-link-stack_overflow-avatar: http://stackoverflow.com/users/flair/491506.png
-link-twitter:            	https://twitter.com/kindasimple
-link-coderbits:          	https://coderbits.com/kindasimple
-link-blog:               	http://kindasimplesolutions.com/blog
-link-url:                	http://kindasimplesolutions.com
-link-pgh_techfest-code:     https://github.com/kindasimple/PGHTechFest
-link-pgh_techfest-win8:     http://apps.microsoft.com/windows/en-us/app/pghtechfest/630784e7-6037-494c-94d8-6eea9f468125
-link-pgh_techfest-wp8:		http://www.windowsphone.com/en-us/store/app/pghtechfest/bdd8a816-173b-4b2e-9296-978e88053605
-link-recollection-win8:     http://apps.microsoft.com/windows/en-us/app/699fe4c9-13a8-4ff7-b2df-d6cae8802f83
-link-recollection-wp8:      http://www.windowsphone.com/en-us/store/app/recollection/8de271b5-437c-4a26-b2cd-987148b4955b
-link-recollection-web:      http://mnemonal.com
-link-big_arms_club-web:		http://bigarmsclub.com
-email-link:					mailto:kindasimple@gmail.com
-email-text:					kindasimple@gmail.com
+title: "Kinda Simple Solutions"
+description: Experienced Tech Leader Specializing in Mobile Development, Compute Platforms & Business Applications | Expertise in AWS, .NET, Agile
 
 authors:
   evan:

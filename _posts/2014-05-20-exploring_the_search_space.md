@@ -1,6 +1,5 @@
 ---
 title: Exploring the Search Space
-layout: blog
 author: evan
 categories: [dev]
 tags: [search, python, kml, heuristic, AStar]

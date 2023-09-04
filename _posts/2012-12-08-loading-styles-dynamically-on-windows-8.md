@@ -1,7 +1,6 @@
 ---
 title: Loading Styles Dynamically on Windows 8
 author: Evan
-layout: blog 
 categories:
   - Programming
   - Windows 8

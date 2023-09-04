@@ -1,7 +1,6 @@
 ---
 title: Memory Challenges and Recollection
 author: Evan
-layout: blog 
 categories:
   - Lifehacks
   - Windows 8

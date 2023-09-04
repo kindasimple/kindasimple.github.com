@@ -1,7 +1,9 @@
 ---
 permalink: /blog/
-layout:    post
-title:     KindaSimple Blog
+layout:    single
+title:     Kinda Simple Solutions Blog
+classes:   wide
+author_profile: true
 ---
 
 <div>

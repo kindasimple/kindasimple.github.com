@@ -1,9 +1,8 @@
---- 
-layout: blog 
-title: Open Source Web Development Tools 
-author: evan 
-categories: [dev] 
-tagline: "An overview of modern javascript web development tools and technologies" 
+---
+title: Open Source Web Development Tools
+author: evan
+categories: [dev]
+tagline: "An overview of modern javascript web development tools and technologies"
 ---
 
 I have been playing catchup lately trying to wrap my head around web developmentwith Node.js, and the npm ecosystem. There are so many tools available and packages to stitch together. I'm in awe of the amount of development in the javascript community. There's a lot to learn to become familiar with each project and what it does without even learning how to use it.
@@ -14,8 +13,8 @@ Here's a list of the more popular tools and frameworks:
 *Frameworks*: Express, Flatiron
 *Templates*: Jade, Mustache/Handlebars
 *Style*: Less, Sass
-*Frameworks*: Express, Ember 
-*Test Frameworks*: Mocha, Selenium 
+*Frameworks*: Express, Ember
+*Test Frameworks*: Mocha, Selenium
 *Platforms*: Angular, Backbone, Meteor
 *Package Management*: npm, Bower
 *Build*: Grunt, Gulp

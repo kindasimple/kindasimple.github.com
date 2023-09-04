@@ -1,16 +1,25 @@
 ---
 permalink: /projects/
-layout:    default
+layout:    single
 title:     Projects
+classes:   wide
+author_profile: true
 ---
+Some personal projects for fun and to learn new technologies.
 
-I'm on a mini-retirement. That gives me time to learn some new skills and play a bit. 
+## Petfinder
 
-###Windows Phone &amp; Windows 8
-I have a few applications in the store. I created Recollection to make it easy to create mnemonics with the Major System. My next windows app that I create will be a tool for locating services for a touring cyclist.
+<img src="/assets/images/petfinder_logo.png" width="80" alt="petfinder logo" style="float: left; margin-right: 8px;" /> Save time looking for your new best friend. Use the petfinder api to run a search that tracks listings and present a web UI for fast browsing. | [https://github.com/kindasimple/petfinder](https://github.com/kindasimple/petfinder)
 
-###Node.js
-I have been working with node.js for the first time to create some web tools. 
+## OpenAI Playground
 
-###Scala
-I haven't done functional programming since my programming languages course in college where we completed assignments in ML. There are a few functional programming languages that look interesting: Haskell, Clojure, Scala.
+<img src="/assets/images/openai_logo.png" width="80" alt="openai logo" style="float: left; margin-right: 8px;" /> Working with the OpenAI API to create prompts for and query the LLM as suggested by the OpenAI team. | [https://github.com/kindasimple/openai_playground](https://github.com/kindasimple/openai_playground)
+
+## Big Arms Club
+
+<img src="/assets/images/bigarms_logo.png" width="80" alt="big arms club logo" style="float: left; margin-right: 8px;" /> A Twilio app that tracks pushups for a group of people over SMS and creates a web leaderboard. | [https://github.com/kindasimple/bigarms](https://github.com/kindasimple/bigarms)
+
+## Rehearsive
+
+<img src="/assets/images/rehearsive_logo.png" width="80" alt="big arms club logo" style="float: left; margin-right: 8px;" /> A tool for rehearsing dialogues from video and translated closed captions and to create flashbards for foreign languge study. | [https://github.com/kindasimple/rehearsive](https://github.com/kindasimple/rehearsive)
+

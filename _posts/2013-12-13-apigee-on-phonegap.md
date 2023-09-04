@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Apigee on PhoneGap
 author: evan
 categories: [dev]
@@ -10,10 +9,10 @@ tagline: 'Writing Cross Platform HTML5 Apps using PhoneGap and UserGrid'
 ---
 I like Orlando--most of all because its residents enjoy summertime temperatures while the rest of the country is in a deep freeze.
 
-There is also a healthy tech community here. There are plenty of developer groups on meetup (including a ".NET users group":http://www.meetup.com/ONETUG/). Last weekend I learned, too late to attend, that "RobotsConf":http://robotsconf.com/ was hosted just a few hours away in Amelia Island and both programmers and Arduino/Raspberry Pi enthusiasts made robots move, drones fly , and made objects on 3D printers. There's a "hackers space":http://familab.org/blog/...there's much for a techie to do.
+There is also a healthy tech community here. There are plenty of developer groups on meetup (including a [.NET users group](http://www.meetup.com/ONETUG/)). Last weekend I learned, too late to attend, that [RobotsConf](http://robotsconf.com/) was hosted just a few hours away in Amelia Island and both programmers and Arduino/Raspberry Pi enthusiasts made robots move, drones fly , and made objects on 3D printers. There's a [hackers space](http://familab.org/blog/)...there's much for a techie to do.
 
 
-Yesterday, "Apigee":http://apigee.com hosted a programming event to demonstrate how to make an HTML5 application in PhoneGap and to use their UserGrid API as a cloud data storage solution. "Greg Rewis":https://twitter.com/garazi did a complete walkthrough from the fundamentals of HTML5 apps to packaging and deploying to a device using PhoneGap, giving a good amount of background that he learned through years of firsthand development experience.
+Yesterday, [Apigee](http://apigee.com) hosted a programming event to demonstrate how to make an HTML5 application in PhoneGap and to use their UserGrid API as a cloud data storage solution. [Greg Rewis](https://twitter.com/garazi) did a complete walkthrough from the fundamentals of HTML5 apps to packaging and deploying to a device using PhoneGap, giving a good amount of background that he learned through years of firsthand development experience.
 
 
 Greg was an engaging speaker, which is key when you spend all day in a room having a one-way conversation. I have only superficial knowledge of programming for the mobile web so this session was great for me. The data-attributes that I have been haphazardly copying and pasting in my bootstrap websites now make much more sense, and the mechanics of the jquery UI are much clearer to me now. Another topic was speeding up a workflow using Codiqa to quickly prototype user interfaces. Our entire front end was created painlessly, which wouldn't have been true if I had to code it from scratch.
@@ -22,7 +21,7 @@ Greg was an engaging speaker, which is key when you spend all day in a room havi
 Apigee's cloud hosted UserGrid solution is completely free to use with some generous usage limits. It has been very encouraging that so many companies are willing to have a free tier. I have gotten much further in my hacking together some cloud hosted web applications thanks to the free usage policies of Heroku and MongoHQ. The support of these companies is indespensible for a hobbyist or unfunded startup.
 
 
-Usergrid is a great alternative to "MongoHQ":https://www.mongohq.com. "The SDK":http://apigee.com/docs/app-services/content/installing-apigee-sdk-javascript is as easy to use as any MongoDB node package and Apigee's website has a fully functional front-end to operate on the data store as well as handle user access and run analytics. "UserGrid":https://github.com/apigee/usergrid-stack is an open source project that can run on your own backend server, so you aren't locked into Apigee's cloud service. I'm also excited about the messaging features that Apigee offers, though time didn't allow for us to have that discussion.
+Usergrid is a great alternative to [MongoHQ](https://www.mongohq.com). [The SDK](http://apigee.com/docs/app-services/content/installing-apigee-sdk-javascript) is as easy to use as any MongoDB node package and Apigee's website has a fully functional front-end to operate on the data store as well as handle user access and run analytics. [UserGrid](https://github.com/apigee/usergrid-stack) is an open source project that can run on your own backend server, so you aren't locked into Apigee's cloud service. I'm also excited about the messaging features that Apigee offers, though time didn't allow for us to have that discussion.
 
 
 Meeting other developers was another highlight of the event. I've been digging around in the mobile web, but since I have no office to go to I haven't had much facetime with developers to talk about technology and programming. I met some good people and after the session ended we headed to the hotel bar for some social time, and some drinks!

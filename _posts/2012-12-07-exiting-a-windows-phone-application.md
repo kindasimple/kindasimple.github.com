@@ -1,7 +1,6 @@
 ---
 title: Exiting a Windows Phone Application
 author: Evan
-layout: blog
 categories:
   - Programming
   - Windows Phone 7
@@ -13,7 +12,7 @@ On a Windows Phone it&#8217;s bad form to quit an application to close itself. A
 
 So, for times when that app should no longer be used disabling the UI is the next best thing to exiting the application. Here&#8217;s an easy way to do it.
 
-```
+```c#
 private void Exit()
 {
     while (NavigationService.BackStack.Any())

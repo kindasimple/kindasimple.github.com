@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: A look at Grunt.js
 author: evan
 categories: [dev]

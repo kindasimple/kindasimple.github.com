@@ -1,7 +1,6 @@
 ---
 title: Deactivating Windows Phone Live Tiles
 author: Evan
-layout: blog
 categories:
   - Programming
   - Technology

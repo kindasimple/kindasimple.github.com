@@ -1,7 +1,6 @@
 ---
 title: Speaking Scripts With NirCmd
 author: Evan
-layout: blog
 categories:
   - Command Line
 tags:

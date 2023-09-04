@@ -1,46 +1,39 @@
 ---
 permalink: /about/
-layout:    default
+layout:    single
 title:     About Me
-tagline:   'Mobile Developer : Windows Phone and Windows 8'
+tagline:   'Tech Lead : Compute Platforms, Business Applications & Mobile'
+author_profile: true
+classes:    wide
 ---
 
-I have a experience building apps for Windows Phone and Windows 8. I'm taking some time off to do a <a href="http://quitecomplicated.com">cross country bike ride</a> and do some independent learning.
+Experienced tech leader with 17+ years in compute platform management, mobile development, and team leadership. Expertise in Python, C#, JavaScript, AWS, .NET, Android, and iOS. Seeking a role to leverage my background in compute pipelines, mobile apps, business process improvement, and leadership to drive innovation and success.
 
-<div class="meta" style="margin-bottom: 48px;">
-    <span>
-    <img style="float:left; margin-right:12px;" src="https://s.gravatar.com/avatar/{{ site.authors.evan.gravatar }}?s=80">
-    </span>
-    <span class="author">{{ site.authors.evan.display_name }}
-    <div>
-    <span><a href="{{ site.link-twitter }}">Twitter</a> | </span>
-    <span><a href="{{ site.link-github }}">Github</a> | </span>
-    <span><a href="{{ site.link-stack_overflow }}">Stack Overflow</a></span>
+## Professional Experience
 
-    </div>
-        <div><a href="{{ site.email-link }}">{{ site.email-text }}</a></div>
-    </span>
-</div>
+### Team Lead, Compute Platform, 23andMe, Jan ’18-Present (5+ yrs)
+* Led the development of compute pipelines and workflow orchestration for the Personal Genome Service.
+Managed an asynchronous compute cluster in AWS, processing over 12 million tasks daily, supporting batch computes and asynchronous tasks on behalf of the customer website.
+* Developed HPC solutions using PySpark on AWS EMR, EC2 ASG, and AWS Batch pipelines to run inference for machine learning models on large datasets.
 
-<div style="clear:both;"/>
+### Mobile Developer, Mocaworks, July ’14-Feb. ’17 (2 yrs 7 mos)
+* Developed a cross-platform hybrid mobile application for the KnowledgeVault product, written in HTML5/JS and built upon the Apache Cordova framework.
+* Developed web applications, APIs, and services built upon the ASP MVC framework and node.js to support and enhance a social collaboration website. Features included an SMS bot, surveys, course assignments, site administration, and a product purchasing system.
+* Designed and implemented business layer architecture to improve code quality, testability, and reuse.
+* Created a desktop service similar to Dropbox to enable users' local retrieval, edit, and synchronization of cloud files.
+Set up and maintained the company's locally hosted source control and continuous integration services.
+Maintained native iOS and Android applications.
 
-<h1 class="content-subhead">Projects</h1> 
+### Mobile Developer, AccuWeather, June ‘10-July ’13 (3 yrs 2 mos)
+* Created flagship mobile applications on Windows Phone and Windows 8 platforms, delivering detailed weather content to millions of users globally. Responsible for development through the product life cycle.
+* Developed and administered REST web services to support the mobile applications.
+* Set up and maintained build servers to optimize the development process.
 
-###Windows Phone &amp; Windows 8
-I have a few applications in the store. I created Recollection to make it easy to create mnemonics with the Major System. My next windows app that I create will be a tool for locating services for a touring cyclist.
+### Business Application Developer, Sikorsky, Mar. ‘07-June ’10 (3 yrs 4 mos)
+* Developed and maintained web applications to implement Lean manufacturing initiatives utilizing MS SQL Server, MS Access, ASP.NET.
+* Conducted ad-hoc SQL data analysis and continuously improved IT processes and services.
+* Led the data migration of SQL database backend to SAP ERP system.
 
-###Node.js
-I have been working with node.js for the first time to create some web tools. 
-
-###Scala
-I haven't done functional programming since my programming languages course in college where we completed assignments in ML. There are a few functional programming languages that look interesting: Haskell, Clojure, Scala.
-
-{% include apps.html %}
-
-
-
-<!--
-<a href="{{ site.link-stack_overflow }}" style="float:right;">
-    <img src="{{ site.link-stack_overflow-avatar }}" width="208" height="58" alt="profile for kindasimple at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for kindasimple at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a>
-//-->
+### Programmer, LC Consulting Services, Nov ‘04-Sept ’06 (1 yr 11 mos)
+* Developed and administered classic ASP websites for internal communication, powered by MySQL and MS Access databases.
+* Designed, tested, and maintained C++ MFC frontend applications and libraries for industrial compressor design specifications.
