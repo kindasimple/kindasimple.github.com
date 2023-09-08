@@ -4,8 +4,12 @@ author: evan
 categories: [dev]
 tags: [sorting, python]
 tagline: 'upsorting in a heapsort'
+header:
+  image: assets/images/header-upsifting-heapsort.png
 ---
-While trying to implement a heapsort in python I came across pseudocode that communicated that sifting up and sifting down to build the heap are different approaches to the same things. They both work well for creating a heap. Sifting down move the element to a sorted position in the tree. Sifting up will move single leaf up to a lower level of the tree.
+While trying to implement a heapsort in python I came across pseudocode that communicated that sifting up and sifting down to build the heap are different approaches to the same things. They both work well for creating a heap. Sifting down will move the element to a sorted position in the tree. Sifting up will move single leaf up to a lower level of the tree.
+
+## Implementation
 
 ```
 function siftUp(a, start, end) is
@@ -26,7 +30,9 @@ The Psuedocode from [Wikipedia](http://en.wikipedia.org/wiki/Heapsort) shows a f
 After the swap that puts the largest (root) item in the last (sorted) position of the array, sifting down will repair the damaged heap by placing the new root (the swapped leaf) into a correct position. Sifting down runs in O(n) while sifting up doesn't fare as well running O(n log n), so sifting down probably preferred.
 
 ![Heapsort Animation](http://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
-**Heapsort with Downsifting**
+
+## Heapsort with Downsifting
+
 Source: [Wikipedia](http://en.wikipedia.org/wiki/File:Heapsort-example.gif)
 
 Sifting up will simply look at the last item of the heap and check to see it needs sifting! For our broken heap, this will only cause a swap if the leaf is one level deep and it won't necessarily repair the tree. I discovered this on my own, [as have others](http://stackoverflow.com/questions/16574962/why-doesnt-my-heapsort-work). Its an easy mistake to make, especially from sources that seem confused themselves.

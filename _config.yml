@@ -9,7 +9,6 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0
 repository: kindasimple/kindasimple.github.io
 minimal_mistakes_skin: "dark"
 logo: "/assets/images/88x88.png"
-toc: true
 
 author:
   name: "Evan White"
@@ -73,6 +72,7 @@ defaults:
       comments: true
       share: true
       related: true
+      toc: true
 
 kramdown:
   input: GFM
@@ -83,12 +83,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: true
   syntax_highlighter_opts:
-    wrap: div
-    line_numbers: inline
-    line_numbers_start: 1
-    tab_width: 4
-    bold_every: 10
-    css: style
+    block:
+      line_numbers: inline
+      line_numbers_start: 1
+      tab_width: 4
+      bold_every: 10
+      css: style
 
 ## Custom vars
 title: "Kinda Simple Solutions"

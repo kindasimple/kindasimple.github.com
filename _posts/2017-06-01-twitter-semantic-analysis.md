@@ -6,6 +6,8 @@ categories:
 tags:
   - python
   - data analysis
+header:
+  image: assets/images/header-twitter-semantic-analysis.png
 ---
 
 Statistical methods for modeling and analyzing data are all
@@ -15,7 +17,7 @@ posted by Marco Bonzanini on his [Blog](https://marcobonzanini.com/2015/03/02/mi
 It was a good start to learn the fundamentals of semantic analysis, and a soft introduction
 to programming with python.
 
-*Harvesting Tweets*
+## Harvesting Tweets
 
 My data harvesting efforts started with the node.js twitter package on npm. Harvesting
 data from twitter's streaming api is conveniently supported by many packages produced
@@ -31,7 +33,7 @@ streaming api filters enable.
 
 With a collection of tweets, it was fairly easy to iterate over them and apply our analysis.
 
-*Classifier*
+## Classifier
 
 The classifier implemented is termed PMI-IR proposed by Turney(2002) [http://www.aclweb.org/anthology/P02-1053.pdf](http://www.aclweb.org/anthology/P02-1053.pdf). It is a straitforward unsupervised learning technique
 that evaluates the polarity and its valence based on closeness of terms to those from an apriori positive and negative lexicon,
@@ -120,7 +122,7 @@ def orientation_valence(self, pmi):
 We then have an orientation for each
 term, and the semantic orientation of a sentence can be the aggregate orientation of its consituent words.
 
-*Implementation*
+## Implementation
 
 I followed the tutorial with two exceptions. The first was to sort the pmi indices because of the way the
 cooccurrence matrix was created requires that these terms be in order. The second is to add a bias to the terms
