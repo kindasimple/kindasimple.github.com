@@ -10,7 +10,6 @@ header:
       url: "https://chrome.google.com/webstore/detail/voice-control-for-chatgpt/eollffkcakegifhacjnlnegohfdlidhn"
   teaser: /assets/images/header-chatgpt-as-a-language-tutor.png
   image: /assets/images/header-chatgpt-as-a-language-tutor.png
-  image: /assets/images/header-chatgpt-as-a-language-tutor.png
   image_description: "conversation between 3 students in bavaria"
   show_overlay_excerpt: true
   overlay_image: /assets/images/header-chatgpt-as-a-language-tutor.png

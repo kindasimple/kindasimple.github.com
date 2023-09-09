@@ -2,13 +2,22 @@
 title: Next Projects
 author: evan
 categories: [dev]
-tagline: Exploring technologies
+tagline: Exploring solutions with technology in the AI landscape
 toc_label: "Projects List"
 layout: single
 header:
   image: /assets/images/header-next-projects.png
   teaser: /assets/images/header-next-projects.png
-
+  show_overlay_excerpt: true
+  overlay_image: /assets/images/header-next-projects.png
+  overlay_filter: 0.5
+  actions:
+    - label: "Try GitHub Copilot"
+      url: "https://github.com/features/copilot"
+    - label: "openai_playground on GitHub"
+      url: "https://github.com/kindasimple/openai_playground"
+    - label: "petfinder on GitHub"
+      url: "https://github.com/kindasimple/petfinder"
 ---
 
 Large Language Models (LLMs) are exciting to any developer. It was a year ago that OpenAI changed the game with GPT-3. The hype has subsided and that just reflects the reality of any new technological breakthrough and its adoption. The pace of change is fast, but naturally it won't keep pace with mass expectations unless we hit the signularity.
