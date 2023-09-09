@@ -2,7 +2,17 @@
 title: Book Review Team Geek
 author: evan
 categories: [dev, books]
-tagline: 'A book about Team and their individuals'
+tagline: A book about Teams and their individuals
+header:
+  image: /assets/images/header-book-review-team-geek.png
+  image_description: "Four happy software engineers in a meeting room."
+  teaser: /assets/images/header-book-review-team-geek.png
+  show_overlay_excerpt: true
+  overlay_image: /assets/images/header-book-review-team-geek.png
+  overlay_filter: 0.5
+  actions:
+    - label: "Get the Book"
+      url: "https://www.amazon.com/Team-Geek-Software-Developers-Working/dp/1449302440?&_encoding=UTF8&tag=kindasimple-20&linkCode=ur2&linkId=ffe0ca842b0a24965d621220d970a5e0&camp=1789&creative=9325"
 ---
 [Team Geek](http://www.amazon.com/Team-Geek-Software-Developers-Working/) is billed as a "Software Developer's Guide to working well with others." Its written by two googlers with solid tips for how to survive organizations from both the managerial and programmer points of view.
 

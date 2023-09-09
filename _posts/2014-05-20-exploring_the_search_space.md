@@ -5,7 +5,9 @@ categories: [dev]
 tags: [search, python, kml, heuristic, AStar]
 tagline: 'Implementation of different search algorithms'
 header:
-  image: assets/images/header-exploring-the-search-space.png
+  image: /assets/images/header-exploring-the-search-space.png
+  teaser: /assets/images/header-exploring-the-search-space.png
+
 ---
  [google-map]: https://maps.google.com/maps?q=http%3A//kindasimplesolutions.com/assets/kml/astar_dijkstra.kml "Search results on google maps"
  [sort]: http://kindasimplesolutions.com/blog/upsifting-heapsort/ "df"

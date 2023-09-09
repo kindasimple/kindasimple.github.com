@@ -7,7 +7,9 @@ tags:
   - python
   - data analysis
 header:
-  image: assets/images/header-twitter-semantic-analysis.png
+  image: /assets/images/header-twitter-semantic-analysis.png
+  teaser: /assets/images/header-twitter-semantic-analysis.png
+
 ---
 
 Statistical methods for modeling and analyzing data are all

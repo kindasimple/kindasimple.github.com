@@ -6,7 +6,9 @@ tagline: Exploring technologies
 toc_label: "Projects List"
 layout: single
 header:
-  image: assets/images/header-next-projects.png
+  image: /assets/images/header-next-projects.png
+  teaser: /assets/images/header-next-projects.png
+
 ---
 
 Large Language Models (LLMs) are exciting to any developer. It was a year ago that OpenAI changed the game with GPT-3. The hype has subsided and that just reflects the reality of any new technological breakthrough and its adoption. The pace of change is fast, but naturally it won't keep pace with mass expectations unless we hit the signularity.

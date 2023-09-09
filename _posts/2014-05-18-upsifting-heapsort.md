@@ -5,7 +5,9 @@ categories: [dev]
 tags: [sorting, python]
 tagline: 'upsorting in a heapsort'
 header:
-  image: assets/images/header-upsifting-heapsort.png
+  image: /assets/images/header-upsifting-heapsort.png
+  teaser: /assets/images/header-upsifting-heapsort.png
+
 ---
 While trying to implement a heapsort in python I came across pseudocode that communicated that sifting up and sifting down to build the heap are different approaches to the same things. They both work well for creating a heap. Sifting down will move the element to a sorted position in the tree. Sifting up will move single leaf up to a lower level of the tree.
 

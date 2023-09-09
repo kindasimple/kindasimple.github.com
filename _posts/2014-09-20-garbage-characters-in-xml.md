@@ -7,7 +7,9 @@ categories:
 tags:
   - command line
 header:
-  image: assets/images/header-garbage-characters-in-xml.png
+  image: /assets/images/header-garbage-characters-in-xml.png
+  teaser: /assets/images/header-garbage-characters-in-xml.png
+
 ---
 Polar's GPS often takes time to establish a satellite connection and retrieve a position. After export a "strange character" sits in the time node, causing jquery's xml parser to choke and die.
 
