@@ -1,4 +1,5 @@
 baseurl: ""
+siteurl: "https://kindasimplesolutions.com"
 
 ## Dependencies
 markdown: kramdown
