@@ -19,7 +19,4 @@ Some personal projects for fun and to learn new technologies.
 
 <img src="/assets/images/bigarms_logo.png" width="80" alt="big arms club logo" style="float: left; margin-right: 8px;" /> A Twilio app that tracks pushups for a group of people over SMS and creates a web leaderboard. | [https://github.com/kindasimple/bigarms](https://github.com/kindasimple/bigarms)
 
-## Rehearsive
-
-<img src="/assets/images/rehearsive_logo.png" width="80" alt="big arms club logo" style="float: left; margin-right: 8px;" /> A tool for rehearsing dialogues from video and translated closed captions and to create flashbards for foreign languge study. | [https://github.com/kindasimple/rehearsive](https://github.com/kindasimple/rehearsive)
 
