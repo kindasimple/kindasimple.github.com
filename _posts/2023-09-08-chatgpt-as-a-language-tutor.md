@@ -2,6 +2,8 @@
 title: ChatGPT as a Language Tutor
 author: evan
 tagline: OpenAI ChatGPT and the "Voice Control for ChatGPT" Chrome Extension for Conversational Language Tutoring
+categories: [Lifehacks, LLM]
+tags: [language learning, chatgpt]
 header:
   actions:
     - label: "Try ChatGPT"

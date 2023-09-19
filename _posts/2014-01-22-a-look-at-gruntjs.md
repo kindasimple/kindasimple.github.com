@@ -1,7 +1,7 @@
 ---
 title: A look at Grunt.js
 author: evan
-categories: [dev]
+categories: [Programming]
 tagline: "Reflections on Grunt after TJ Krusinski's talk at Envy Labs"
 ---
 

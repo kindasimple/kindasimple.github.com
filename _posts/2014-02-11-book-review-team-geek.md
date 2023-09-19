@@ -1,7 +1,7 @@
 ---
 title: Book Review Team Geek
 author: evan
-categories: [dev, books]
+categories: [Leadership, Books]
 tagline: A book about Teams and their individuals
 header:
   image: /assets/images/header-book-review-team-geek.png

@@ -1,7 +1,7 @@
 ---
 title: Apigee on PhoneGap
 author: evan
-categories: [dev]
+categories: [Programming]
 tags:
 - Apigee
 - PhoneGap

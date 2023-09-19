@@ -2,6 +2,8 @@
 title: Engage with Instagram Posts using Selenium
 author: evan
 tagline: Using selenium to automate liking Instagram posts
+tags: [social media, python, selenium]
+category: [Automation]
 header:
   teaser: /assets/images/header-liking-ig-posts-with-selenium.png
   image: /assets/images/header-liking-ig-posts-with-selenium.png

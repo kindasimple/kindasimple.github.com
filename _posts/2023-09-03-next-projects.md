@@ -1,7 +1,7 @@
 ---
 title: Next Projects
 author: evan
-categories: [dev]
+categories: [Programming, LLM]
 tagline: Exploring solutions with technology in the AI landscape
 toc_label: "Projects List"
 layout: single

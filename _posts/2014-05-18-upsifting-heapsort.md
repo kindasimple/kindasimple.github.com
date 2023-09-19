@@ -1,7 +1,7 @@
 ---
 title: Upsifting in a Heapsort
 author: evan
-categories: [dev]
+categories: [Programming]
 tags: [sorting, python]
 tagline: 'upsorting in a heapsort'
 header:

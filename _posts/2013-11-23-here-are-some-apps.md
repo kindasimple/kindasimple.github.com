@@ -1,7 +1,7 @@
 ---
 title: Here Are Some Apps
 author: evan
-categories: [dev]
+categories: [Programming]
 tagline: 'Some projects I have been working on'
 ---
 I have a good amount of WinRT experience. So, I decided to make some Windows 8 &amp; Windows Phone applications to have a presence in the app store.

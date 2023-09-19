@@ -1,7 +1,7 @@
 ---
 title: Open Source Web Development Tools
 author: evan
-categories: [dev]
+categories: [Programming]
 tagline: "An overview of modern javascript web development tools and technologies"
 ---
 
