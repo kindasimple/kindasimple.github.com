@@ -2,10 +2,10 @@
 title: Garbage Characters in XML
 author: Evan
 categories:
-  - Running
   - Data
 tags:
-  - command line
+  - unix
+  - running
 header:
   image: /assets/images/header-garbage-characters-in-xml.png
   teaser: /assets/images/header-garbage-characters-in-xml.png

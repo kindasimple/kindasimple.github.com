@@ -5,7 +5,6 @@ categories:
   - Programming
   - Windows 8
 tags:
-  - DUI
   - Programming
   - Styles
   - Windows 8
@@ -17,7 +16,7 @@ Windows 8 is very ambitious in its breadth of supported form factors.  Huge scr
 
 While designing flexible layouts is a must; there are limits. Add to that the difference in use cases for a person interacting with a large monitor at their desk on the one hand, or viewing a television across the room on the other.  The screens would have similar dimensions and aspect ratios, but the former demands a lot of data be available up close while the latter prefers less data well presented.  DUI or Distance UI is a term for this concept, and dynamic themes may provide some solutions.
 
-On windows 8 I can easily determine the screen size and the resolution and adjust the styles accordingly. The basic templates handle the current window&#8217;s SizeChanged event giving me an opportunity to adjust for a larger screen size.
+On Windows 8 I can easily determine the screen size and the resolution and adjust the styles accordingly. The basic templates handle the current window&#8217;s SizeChanged event giving me an opportunity to adjust for a larger screen size.
 
 ```
 private void WindowSizeChanged(object sender, WindowSizeChangedEventArgs e)

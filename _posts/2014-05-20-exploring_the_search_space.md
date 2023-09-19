@@ -2,7 +2,7 @@
 title: Exploring the Search Space
 author: evan
 categories: [Programming]
-tags: [search, python, kml, heuristic, AStar]
+tags: [python, kml, A*]
 tagline: 'Implementation of different search algorithms'
 header:
   image: /assets/images/header-exploring-the-search-space.png
