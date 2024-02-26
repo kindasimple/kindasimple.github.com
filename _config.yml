@@ -44,6 +44,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/kindasimple"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kindasimple/"
 
 ## Permalinks
 permalink:     '/blog/:title/'

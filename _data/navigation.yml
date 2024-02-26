@@ -3,6 +3,8 @@ main:
     url: /
   - title: "About"
     url: /about/
+  - title: "Now"
+    url: /now/
   - title: "Posts"
     url: /blog/
   - title: "Projects"
