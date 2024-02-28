@@ -8,11 +8,11 @@ author_profile: true
 
 What I'm doing [Now][now-page], February 27, 2024:
 
-* Learning [River Flows In You][river-flows-in-you-video] by [Yurima][yurima-wikipedia] on the [piano][river-flows-in-you-piano-sheet-music]
-* Finding a daily motivational quote to share with family.
-* Walking for active recovery from the gym.
+* Facebook Interview prep
+* Gym: Arms
 * Updating my resume and LinkedIn profile.
-* Create some notes using [obsidian](https://obsidian.md/)
+* Practice [Hanon Exercises](https://www.amazon.com/Hanon-Virtuoso-Exercises-Complete-Schirmers/dp/0793525446) 1 & 2 on piano.
+* Finding a daily motivational quote to share with family.
 
 <!-- Reference-Style Links //-->
 [now-page]: https://nownownow.com/
